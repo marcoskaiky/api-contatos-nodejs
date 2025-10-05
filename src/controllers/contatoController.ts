@@ -57,7 +57,7 @@ export class ContatoController {
     async update(req: Request, res: Response): Promise<void> {
         try {
             const { id } = req.params;
-            const updateData: UpdateContatoRequest = req.body;
+            const updateData: UpdateContatoRequest = (req.body ?? {}) as UpdateContatoRequest;
             
             const [existingContato] = await db('contatos')
                 .where('id', id)
@@ -70,11 +70,11 @@ export class ContatoController {
 
             const updateFields: Partial<Contato> = {};
             
-            if (updateData.nome) {
+            if (updateData && updateData.nome) {
                 updateFields.nome = updateData.nome.trim();
             }
             
-            if (updateData.telefone) {
+            if (updateData && updateData.telefone) {
                 updateFields.telefone = updateData.telefone.trim();
             }
 

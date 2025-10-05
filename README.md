@@ -48,26 +48,17 @@ Endpoints
 - GET /contatos
   - Resposta: 200 com lista de contatos
 
-- PATCH /contatos/:id
+- PATCH /contatos/id
   - Body JSON: {"nome":"string","telefone":"string"}
   - Resposta: 200 com o contato atualizado
 
-- DELETE /contatos/:id
+- DELETE /contatos/id
   - Resposta: 204 sem corpo
 
-Exemplos de requisição (curl)
-```
-# Criar
-curl -X POST http://localhost:3000/contatos -H "Content-Type: application/json" -d "{\"nome\":\"Joao Silva\",\"telefone\":\"11999999999\"}"
+Validação manual
+- CRUD validado via Thunder Client usando as URLs acima.
+- Testes realizados: criação, listagem, atualização por id e remoção por id.
 
-# Listar
-curl http://localhost:3000/contatos
-
-# Atualizar
-curl -X PATCH http://localhost:3000/contatos/1 -H "Content-Type: application/json" -d "{\"nome\":\"Ana Maria\"}"
-
-# Deletar
-curl -X DELETE http://localhost:3000/contatos/1
 ```
 
 Estrutura do projeto
