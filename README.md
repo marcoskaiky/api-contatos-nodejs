@@ -6,6 +6,17 @@ Requisitos
 - Node.js 18+
 - MySQL 8+
 
+Tecnologias e dependências utilizadas
+- Node.js, TypeScript
+- Express (API HTTP)
+- Knex (query builder) e CLI do Knex (migrations)
+- mysql2 (driver MySQL)
+- dotenv (variáveis de ambiente)
+- ts-node-dev (desenvolvimento com reload)
+- @types/express, @types/knex, @types/node (tipos)
+- Middleware de validação própria 
+- Thunder Client (validação manual dos endpoints)
+
 Configuração
 1. Clone o repositório e instale dependências
 ```
