@@ -32,8 +32,8 @@ CREATE DATABASE api_contatos;
 ```
 DB_HOST=localhost
 DB_PORT=3306
-DB_USER=seu_usuario
-DB_PASS=sua_senha
+DB_USER=usuariovaga
+DB_PASS=senhavaga
 DB_NAME=api_contatos
 NODE_ENV=development
 PORT=3000
