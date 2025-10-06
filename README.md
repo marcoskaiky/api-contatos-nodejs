@@ -1,4 +1,8 @@
 # api-contatos-nodejs
+
+### Obs: (Não utilizei Docker para conteinerizar o banco de dados, por exemplo, pois não sabia se essa tecnologia é utilizada por vocês. No entanto, posso implementar essa funcionalidade caso seja a preferência.)
+
+
 Projeto de API de Contatos. Implementa operações CRUD (Create, Read, Update, Delete) com persistência em banco de dados MySQL, incluindo validações de dados essenciais.
 API de Contatos - Node.js + TypeScript + MySQL
 
